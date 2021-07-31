@@ -1,0 +1,37 @@
+What is a REST API?
+
+It's a way of thinking about how a web server responds to your requests
+
+It responds with RESOURCES. We are asking for a resource, for a thing in the server and with that resource
+we can do  GET, POST, PUT, DELETE, etc
+
+Item resource -> for INDIVIDUAL RESOURCE
+
+GET /item/chair
+POST /item/chair
+
+For more than an Item -> Item List resource
+GET /items
+
+Dealing with RESOURCES and dealing with STATELESS SERVER ( servers that only see one request per time, so if the
+second request is from the same user from before, the server doesn't know and ned an authentication in each request.)
+
+JSONIFY -> takes python dictionary and converts it JSON, which is a string in this format. So, JSON is like a dictionary
+with pair and values, but in the text format for every technology understand what it is.
+
+JSON always uses DOUBLE QUOTES. Never SINGLES QUOTES.
+
+Query vs. Path Parameters (differences)
+The first difference between query and path parameters is their position in the URL.
+While the query parameters appear on the right side of the ‘?’ in the URL, path parameters
+come before the question mark sign.
+
+Secondly, the query parameters are used to sort/filter resources. On the other hand, path parameters are used to identify a specific resource or resources.
+
+You can’t omit values in path parameters since they are part of the URL. On the other hand, query parameters are added at the end of the URL, and thus can allow omission of some values as long as the serializing standards are followed.
+
+Query parameters have unique attributes which help to define resources in a better way. Path parameters, on the other hand, have dynamic resources, which act upon more granular objects of the resource.
+
+No HEADERS podemos dizer qual tipo de dados estamos enviando na requisição
+
+cONTENT-tYPE : APPLICATION/KSON -> the server will be expected JSOn code to be in the BODY
